@@ -24,6 +24,7 @@ readFile(filePath, 'utf8', (err, dataString) => {
         console.error(err);
         return;
     }
+    //
     data = JSON.parse(dataString);
     for (let i in data.data) {
         let temp = data.data[i];
